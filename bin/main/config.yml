@@ -1,0 +1,9 @@
+MONGO:
+  HOST: "127.0.0.1"
+  PORT: 27017
+  DB: "Lock"
+  TIMEOUT: 3
+  AUTH:
+    ENABLED: false
+    USER: "admin"
+    PASSWORD: "admin"
