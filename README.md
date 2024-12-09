@@ -1,4 +1,4 @@
-# 🌐🔒🔑 Lock 
+# 🌐🔒🔑 Lock
 **A plugin for securing your Minecraft server** <br>
 
 > [!NOTE]
@@ -36,6 +36,11 @@ Enjoy!
 
 # Contributing
 Make a pull request and I wil review it and potentially merge it into the `master` branch
+
+# Workflow status 
+[![CodeQL](https://github.com/ma1de/lock/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/ma1de/lock/actions/workflows/github-code-scanning/codeql)
+[![Dependabot Updates](https://github.com/ma1de/lock/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/ma1de/lock/actions/workflows/dependabot/dependabot-updates)
+[![Java CI with Gradle](https://github.com/ma1de/lock/actions/workflows/gradle.yml/badge.svg)](https://github.com/ma1de/lock/actions/workflows/gradle.yml)
 
 # License Notice
 
