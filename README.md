@@ -34,6 +34,9 @@ Now that you have compiled it you can go into the `build/libs` directory, copy
 the `Lock-all.jar` *(look for a file with the `-all` ending, it's important)*  file, and paste it into your `plugins/` folder. <br>
 Enjoy!
 
+# Contributing
+Make a pull request and I wil review it and potentially merge it into the `master` branch
+
 # License Notice
 
     Lock - A plugin for securing your Minecraft server
