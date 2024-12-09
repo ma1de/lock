@@ -7,3 +7,8 @@ MONGO:
     ENABLED: false
     USER: "admin"
     PASSWORD: "admin"
+
+# Change all of these values, it's important!
+ENCRYPTION:
+  PASSPHRASE: ""
+  SALT: ""

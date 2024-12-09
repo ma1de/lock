@@ -7,6 +7,7 @@ import com.mongodb.ServerAddress;
 import com.mongodb.client.MongoClients;
 import me.ma1de.lock.data.DataEntry;
 import me.ma1de.lock.data.DataHandler;
+import me.ma1de.lock.profile.ProfileHandler;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.google.gson.Gson;
@@ -37,6 +38,7 @@ public class Lock extends JavaPlugin {
     private MongoDatabase mongoDatabase;
 
     private DataHandler dataHandler;
+    private ProfileHandler profileHandler;
 
     @Override
     public void onEnable() {
@@ -78,6 +80,9 @@ public class Lock extends JavaPlugin {
             return;
         }
 
+        this.profileHandler = new ProfileHandler();
+        this.profileHandler.onLoad();
+
         stopwatch.stop();
 
         long elapsed = stopwatch.elapsed(TimeUnit.MILLISECONDS);
@@ -105,6 +110,9 @@ public class Lock extends JavaPlugin {
 
     @Override
     public void onDisable() {
+        this.dataHandler.onShutdown();
+        this.profileHandler.onShutdown();
+
         this.mongoClient.close();
 
         instance = null;
